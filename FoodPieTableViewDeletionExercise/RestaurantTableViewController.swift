@@ -93,6 +93,9 @@ class RestaurantTableViewController: UITableViewController {
                     popoverController.sourceRect = cell.bounds
                 }
             }
+
+            completionHandler(true)
+            self.present(activityController, animated: true, completion: nil)
         })
 
         shareAction.backgroundColor = UIColor(displayP3Red: 254.0/255.0, green: 149.0/255.0, blue: 38.0/255.0, alpha: 1.0)
